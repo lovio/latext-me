@@ -1,0 +1,77 @@
+%# -*- coding:utf-8 -*-
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage{fontspec,xunicode}
+\setmainfont{Tahoma}
+\usepackage[slantfont,boldfont]{xeCJK}
+\usepackage{xcolor}                 % replace by the encoding you are using
+\setCJKmainfont{msyh.ttf}
+
+% moderncv themes
+%\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{刘}
+\familyname{琦}
+\title{个人简历}               % optional, remove the line if not wanted
+\address{北京}{海淀区学院路37号18号公寓128室}    % optional, remove the line if not wanted
+\mobile{18600575360}                    % optional, remove the line if not wanted
+\email{liuqi0611@126.com}                     % optional, remove the line if not wanted
+\extrainfo{QQ53101054} % optional, remove the line if not wanted
+\photo[64pt]{me}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{基本信息}
+\cvline{出生日期}{1990-08-01}
+\cvline{政治面貌}{中共预备}
+\cventry{教育信息}{2009-2013}{北京航空航天大学}{本科在读}{软件工程\&应用数学（第二学位）}{}
+\cvline{外语能力}{CET-6}
+\cvline{业余爱好}{羽毛球、读书、摄影、旅行、骑车}
+
+\section{程序语言技能}
+\cvline{熟悉平台}{Linux\(Ubuntu\)、Windows}
+\cvline{熟悉语言}{HTML5、JavaScript、C}
+\cvline{精通语言}{Ruby、PHP、C\#}
+\cvline{熟悉框架}{Rails、Sinatra、RSpec、Cucumber、Bootstrap、JQuery}
+
+\section{项目经验}
+\cvline{项目名称}{软件登记测试管理系统（2012年9月4日至12月6日）}
+\cvline{项目介绍}{这是为赛迪集团软件测评中心开发的一款OA子系统。该系统实现了软件评测中心的测试申请流程无纸化。实现的功能主要包括登录、密码修改、流程审批、
+生成报告、新闻公告、OA信息同步等功能。网站用asp.net编写，UI使用jquery和一些插件，业务逻辑层采用C\#，数据访问层用Nhibernate。数据库是Sql Server2008。}
+\\
+\cvline{项目名称}{OmarHub(敏捷开发实践)(2012-6)}
+\cvline{项目介绍}{项目是编写一个类似微博的网站。项目实现了的功能有登录、邮箱找回密码、发“微博”、评论、Follow等功能。后端语言是PHP，使用了Yii框架。数据库使用MySql。项目采用了敏捷开发模式。}
+\\
+\cvline{项目名称}{点对点加密聊天工具SeIM(2011)}
+\cvline{项目介绍}{使用Java语言编写的一个桌面聊天工具。聊天内容经过了非对称加密算法加密。该软件还有保存聊天记录的功能。}
+
+\section{社会经历}
+\cvline{}{2010年蒙牛酸酸乳MusicRadio音乐排行榜学生记者团记者。}
+\cvline{}{2011年暑假体验生活，32天从北京骑车到贵州遵义。}
+\end{document}
+
+
+%% end of file `template_en.tex'.

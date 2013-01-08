@@ -1,0 +1,84 @@
+	%# -*- coding:utf-8 -*-
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage{fontspec,xunicode}
+\setmainfont{Tahoma}
+\usepackage[slantfont,boldfont]{xeCJK}
+\usepackage{xcolor}                 % replace by the encoding you are using
+\setCJKmainfont{msyh.ttf}
+
+% moderncv themes
+%\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Qi}
+\familyname{Liu}
+\title{Resume}               % optional, remove the line if not wanted
+\address{Beijing}{Room 128,Building 18,No.37,Xueyuan Road,Haidian District}    % optional, remove the line if not wanted
+\mobile{18600575360}                    % optional, remove the line if not wanted
+\email{liuqi0611@126.com}                     % optional, remove the line if not wanted
+\extrainfo{QQ53101054} % optional, remove the line if not wanted
+\photo[64pt]{me}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Personal Information}
+\cvline{Birthday}{1990-08-01}
+\cvline{Party}{the Communist Party of China}
+\cventry{Education}{2009-2013}{Beihang University}{Bachelor}{Software Engineer\&Applied Mathematics (second Bachelor's degree)}{}
+\cvline{English ability}{CET-6:538}
+\cvline{Hobby}{Badminton,Reading,Photography,Biking,Hiking}
+
+\section{Programming ability}
+\cvline{Familiar with}{HTML5,JavaScript,C}
+\cvline{Skilled in}{Ruby,PHP,C\#}
+\cvline{Framework}{Rails,Sinatra,RSpec,Cucumber,Bootstrap,JQuery}
+
+\section{Project experience}
+\cvline{Project name}{Softregd System（From 4th Sep,2012 to 7th Dec，2012）}
+\cvline{Project intro}{This is a website designed for China Electronic Information Industry Development Research Institute to simplify the process of Software Test applying.Our website make it simple and convenient for both applicants and software engineers.It consists of login,roles and authority management,process audit,SMS,workflow,SSO,and so on. My job is to design the architecture of the system and realize some module.It is written in asp.net with some jquery.Data Access Layer used a framework called Nhibernate and the database we deployed is Sql Server 2008.}
+\\
+\cvline{Project name}{OmarHub(Agile Development practice)(2012-6)}
+\cvline{Project intro}{This is a website like twitter and developed with Yii framework.OmarHub has many basic functions like login,finding password,sending tweets,follow and so on.With agile development，this project lasts only 10 days.I'm the project manager and also do some coding job.}
+\\
+\cvline{Project name}{SeIM(2011)}
+\cvline{Project intro}{This ia a chatting software written in Java.My SeIm is security, and don't worry your content will be listened.SeIM is a p2p chatting tool and can save chalog in the computer}
+\\
+\section{Social Experience}
+\cvline{Journalist}{In 2010,as a student journalist,I took part in a Music activity holded organized by China's very famous music program called MusicRadio}
+\\
+\cvline{Badminton}{I have participated in many badminton matches.}
+\\
+\cvline{Environmentalist}{Do some dirt cleaning in Pigpen in an Artificial natural forest in Yanqing,Beijing.}
+\\
+\cvline{Volunteer}{Help the runner in Beijng International Marathon.}
+\\
+\cvline{Photography}{I love Photography and often go out to take photos.}
+\\
+\cvline{My Long March}{In the summer of the year 2011,3 friends and I rode a bike from Beijing to Zhunyi City in Guizhou Province.It lasts 32 days and coveres 3400 kilometers. We experienced a lot during the trip and I have a good knowledge of China.}
+\end{document}
+
+
+%% end of file `template_en.tex'.
